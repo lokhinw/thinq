@@ -1,5 +1,5 @@
 const axios = require('axios')
-const appid = '736bbe5d8a6cc6ec2ebc1138ab70c706'
+const appid = '78cdbbefadd06ab13d8e9bc2ddcf25d0'
 
 
 const getWeather = (q) => {
