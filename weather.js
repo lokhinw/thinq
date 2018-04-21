@@ -9,7 +9,7 @@ const getWeather = (q) => {
       params: {
         q,
         appid,
-        units: 'metric'
+        units: 'imperial'
       }
     })
     .then(({ data }) => {
