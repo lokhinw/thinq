@@ -16,11 +16,11 @@ const getWeather = (q) => {
       const compassSectors = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW", "N"];
 
       return 'Location: ' + data.name + ', ' + data.sys.country
-      +'\nTemperature: ' + data.main.temp + '°C'
+      +'\nTemperature: ' + data.main.temp + '°F'
       +'\nSunrise: ' + convertUnixTime(data.sys.sunrise)
       +'\nSunset: ' + convertUnixTime(data.sys.sunset)
       +'\nWind Direction: ' + compassSectors[Math.round(data.wind.deg / 22.5)]
-      +'\nWind Speed: ' + data.wind.speed + ' km/h'
+      +'\nWind Speed: ' + data.wind.speed + ' m/h'
       +'\nPressure: ' + data.main.pressure + ' mb'
       +'\nHumidity: ' + data.main.humidity + '%';
     })
